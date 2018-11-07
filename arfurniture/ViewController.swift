@@ -94,7 +94,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.session.pause()
         self.sceneView.scene.rootNode.enumerateChildNodes{
             (node, _) in
-            node.removeFromParentNode()
+            node.removeFromParentNode() //this is a test comment to test commit changes
         }
         self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
